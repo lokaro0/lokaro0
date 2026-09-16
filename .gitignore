@@ -1,0 +1,23 @@
+# Build artifacts
+build/
+bin/
+obj/
+out/
+
+# IDE settings
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Private planning materials and projects published separately
+/docs/
+/mlp-from-scratch-portfolio/
+
+# Temporary files
+/tmp/
