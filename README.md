@@ -20,7 +20,7 @@ C++を中心としたソフトウェア開発、ゲームシステム、AIに関
 - CMakeを使い、WSL／Ubuntu上で再現可能なビルド手順を整備
 - README、アーキテクチャ資料、リファクタリング記録を公開
 
-## Team Project Experience
+## Team Project
 
 ### Kagami Mochi Game App
 
