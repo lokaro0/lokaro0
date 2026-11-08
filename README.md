@@ -7,11 +7,15 @@ C++を中心としたソフトウェア開発、ゲームシステム、AIに関
 
 ### [Falling Puzzle Game](https://github.com/lokaro0/falling-puzzle-game)
 
-`C++17` `ncurses` `CMake` `CTest` `GitHub Actions` `Git` `WSL / Ubuntu`
+`C++17` `raylib` `ncurses` `CMake` `CTest` `GitHub Actions` `Git` `Windows / WSL / Ubuntu`
 
-2個組の色付きピースを操作し、同色のピースを4個以上つなげて消す、ターミナル上で動作する落下パズルゲームです。
+2個組の色付きピースを操作し、同色のピースを4個以上つなげて消す落下パズルゲームです。Windows向けのraylib GUI版と、Linux／WSL向けのncurses版を公開しています。
 
-![Falling Puzzle Gameのプレイ画面](https://raw.githubusercontent.com/lokaro0/falling-puzzle-game/main/assets/gameplay.png)
+[Windows版をダウンロード（v0.3.0-preview）](https://github.com/lokaro0/falling-puzzle-game/releases/tag/v0.3.0-preview)
+
+Windows版はZIPを展開して起動できます。タイトル・プレイ・結果・再挑戦の画面遷移、連鎖と同時消しの得点計算、点滅・連鎖表示、効果音、ハイスコア保存を実装しました。
+
+<img src="https://raw.githubusercontent.com/lokaro0/falling-puzzle-game/main/assets/gui-gameplay.png" alt="Falling Puzzle GameのWindows GUI版プレイ画面" width="500">
 
 - ピースの生成・移動・回転・着地、盤面管理、連結探索、消去、重力、連鎖、スコアを実装
 - 単一ファイルだった初版を、`domain`・`ui`・`storage`へ責務分離
@@ -19,6 +23,8 @@ C++を中心としたソフトウェア開発、ゲームシステム、AIに関
 - 盤面、ピース、ゲームルール、ハイスコア保存の4系統をCTestで自動検証
 - CMakeを使い、WSL／Ubuntu上で再現可能なビルド手順を整備
 - README、アーキテクチャ資料、リファクタリング記録を公開
+
+GitHub Actionsの対象はUbuntuでのncurses版ビルドと共通ロジック・保存処理のテストです。Windows GUIの画面や音の検証は含みません。
 
 ## Team Project
 
